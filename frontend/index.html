@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+  <h1>User Dashboard</h1>
+  <button id="addUserBtn">Add User</button>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+    </tbody>
+  </table>
+
+ </div>
+<div id="userModal" class="modal hidden"><div class="modal-content">
+
+  <span class="close">&times;</span>
+
+  <h2 id="modalTitle">Add User</h2>
+
+  <form id="userForm">
+
+    <input type="hidden" id="userId" />
+
+    <label>Name: <input type="text" id="name" required /></label>
+
+    <label>Email: <input type="email" id="email" required /></label>
+
+    <label>Role: 
+
+      <select id="role">
+
+        <option>Admin</option>
+
+        <option>User</option>
+
+      </select>
+
+    </label>
+
+    <label>Status:
+
+      <select id="status">
+
+        <option value="active">Active</option>
+
+        <option value="inactive">Inactive</option>
+
+      </select>
+
+    </label>
+    <button type="submit">Save</button>
+  </form>
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
